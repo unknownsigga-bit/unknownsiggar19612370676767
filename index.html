@@ -2,63 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Website</title>
+  <title>Veck.io | FPS io Game</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Veck.io-style FPS browser experience. Built with HTML, CSS, and JavaScript." />
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #0a0a0a;
-      color: white;
+      color: #fff;
+    }
+
+    header {
+      padding: 24px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      opacity: 0.7;
+    }
+
+    main {
       display: flex;
-      min-height: 100vh;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      min-height: calc(100vh - 120px);
       text-align: center;
+      padding: 20px;
     }
 
-    .box {
-      max-width: 600px;
-      padding: 40px;
+    .card {
       background: #111;
-      border-radius: 12px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      border-radius: 14px;
+      padding: 40px;
+      max-width: 600px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
     }
 
-    h1 {
+    .card h2 {
       margin-top: 0;
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
-    p {
+    .card p {
       opacity: 0.85;
       line-height: 1.6;
     }
 
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     button {
-      margin-top: 20px;
-      padding: 12px 24px;
+      padding: 14px 28px;
       font-size: 1rem;
-      background: #4caf50;
+      border-radius: 8px;
       border: none;
-      border-radius: 6px;
       cursor: pointer;
-      color: black;
+      background: #4caf50;
+      color: #000;
+      font-weight: bold;
+    }
+
+    button.secondary {
+      background: #222;
+      color: #fff;
     }
 
     button:hover {
-      background: #66ff66;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.85rem;
+      opacity: 0.5;
     }
   </style>
 </head>
 <body>
 
-  <div class="box">
-    <h1>Hello 👋</h1>
-    <p>This is my website. It works with just HTML and CSS.</p>
-    <button onclick="alert('It works!')">Click me</button>
-  </div>
+  <header>
+    <h1>Veck.io</h1>
+    <p>FPS-style browser experience</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>
+        This site is a non-Unity version inspired by Veck.io.
+        It runs entirely on HTML, CSS, and JavaScript and works
+        perfectly on GitHub Pages.
+      </p>
+
+      <div class="buttons">
+        <button onclick="alert('Game coming soon!')">Play</button>
+        <button class="secondary" onclick="alert('More info soon')">About</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 • unknownsigga-bit • GitHub Pages
+  </footer>
 
 </body>
 </html>
